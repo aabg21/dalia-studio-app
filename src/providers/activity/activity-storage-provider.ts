@@ -1,21 +1,25 @@
 import {Injectable} from '@angular/core';
 import {Storage} from '@ionic/storage';
 import {Activity} from './activity';
+import {SportActivity} from './sport-activity';
+
+const sport = new SportActivity();
+sport.name = 'חתירה';
+sport.calories = 20;
+sport.time = new Date;
+sport.duration = 60;
 
 @Injectable()
 export class ActivityStorageProvider {
-  private activities: Activity[];
+  private activities: Activity[] = [sport];
   private promise: Promise<Activity[]>;
 
   private KEY = 'activities';
 
   constructor (private storage: Storage) {
-    this.promise = this.storage
-      .get(this.KEY)
-      .then((activities: Activity[]) => {
-        this.activities = activities;
-        return activities;
-      });
+    // this.promise = this.storage
+    //   .get(this.KEY)
+    //   .then((activities: Activity[]) => this.activities = activities);
   }
 
   public getActivities(): Promise<Activity[]> {

@@ -1,9 +1,9 @@
 import {Activity} from './activity';
 
-export const isFoodActivity = (activity: Activity) => activity.type === 'food';
+export const isFoodActivity = (activity: Activity) => activity['type'] === 'food';
 
 export class FoodActivity extends Activity {
-  type: 'food' = 'food';
+  protected type = 'food';
 
   item: string;
   category: string;

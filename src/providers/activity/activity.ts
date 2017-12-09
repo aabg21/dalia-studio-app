@@ -1,3 +1,3 @@
 export abstract class Activity {
-  type: 'food' | 'sport';
+  protected type: string;
 }

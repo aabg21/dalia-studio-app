@@ -1,9 +1,9 @@
 import {Activity} from './activity';
 
-export const isSportActivity = (activity: Activity) => activity.type === 'sport';
+export const isSportActivity = (activity: Activity) => activity['type'] === 'sport';
 
 export class SportActivity extends Activity {
-  type: 'sport' = 'sport';
+  protected type = 'sport';
 
   name: string;
   duration: number;
