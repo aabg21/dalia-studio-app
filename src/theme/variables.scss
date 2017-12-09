@@ -9,7 +9,7 @@ $font-path: "../assets/fonts";
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: ltr;
+$app-direction: rtl;
 
 
 @import "ionic.globals";
@@ -21,6 +21,7 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
+$font-family-base: "Arimo", Arial, sans-serif;
 
 
 
@@ -52,6 +53,7 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$font-family-md-base: $font-family-base;
 
 
 
@@ -84,5 +86,4 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+@import "../assets/fonts/arimo";

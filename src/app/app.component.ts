@@ -1,37 +1,28 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { Platform, MenuController, Nav } from 'ionic-angular';
-
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
+import { Platform, Nav } from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {HomePage} from '../pages/home/home';
 
 
 @Component({
-  templateUrl: 'app.html'
+  template: `
+    <ion-nav [root]="rootPage" swipeBackEnabled="false"></ion-nav>
+  `
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
-  pages: Array<{title: string, component: any}>;
+  rootPage = HomePage;
 
   constructor(
     public platform: Platform,
-    public menu: MenuController,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen
   ) {
     this.initializeApp();
-
-    // set our app's pages
-    this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
-    ];
   }
 
   initializeApp() {
@@ -44,9 +35,6 @@ export class MyApp {
   }
 
   openPage(page) {
-    // close the menu when clicking a link from the menu
-    this.menu.close();
-    // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page);
   }
 }
