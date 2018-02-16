@@ -12,6 +12,8 @@ import {HomePageModule} from '../pages/home/home.module';
 import {HomePage} from '../pages/home/home';
 import { ActivityStorageProvider } from '../providers/activity/activity-storage-provider';
 import {IonicStorageModule} from '@ionic/storage';
+import { PredefinedActivityProvider } from '../providers/predefined-activity/predefined-activity';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import {IonicStorageModule} from '@ionic/storage';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot({
       name: '__daliadb',
@@ -39,7 +42,8 @@ import {IonicStorageModule} from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ActivityStorageProvider
+    ActivityStorageProvider,
+    PredefinedActivityProvider
   ]
 })
 export class AppModule {}

@@ -1,0 +1,11 @@
+{
+  "food": [
+    {
+      "category": "PROTEIN",
+      "item": "פסטרמה רגילה",
+      "portionSize": "כ-2 פרוסות (75 גרם)",
+      "calories": 70,
+      "recommendedSize": ""
+    }
+  ]
+}

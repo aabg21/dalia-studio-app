@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Activity} from '../../../providers/activity/activity';
 import {isSportActivity, SportActivity} from '../../../providers/activity/sport-activity';
-import {FoodActivity, isFoodActivity} from '../../../providers/activity/food-activity';
+import {isFoodActivity, FoodActivity} from '../../../providers/activity/food-activity';
 
 @Component({
   selector: 'activity-card',

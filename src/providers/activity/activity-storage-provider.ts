@@ -3,11 +3,12 @@ import {Storage} from '@ionic/storage';
 import {Activity} from './activity';
 import {SportActivity} from './sport-activity';
 
-const sport = new SportActivity();
-sport.name = 'חתירה';
-sport.calories = 20;
-sport.time = new Date;
-sport.duration = 60;
+const sport = new SportActivity({
+  name: 'חתירה',
+  calories: 20,
+  time: new Date(),
+  duration: 60,
+});
 
 @Injectable()
 export class ActivityStorageProvider {
@@ -19,7 +20,7 @@ export class ActivityStorageProvider {
   constructor (private storage: Storage) {
     // this.promise = this.storage
     //   .get(this.KEY)
-    //   .then((activities: Activity[]) => this.activities = activities);
+    //   .then((activities: Activity[]) => this.activities = activities || []);
   }
 
   public getActivities(): Promise<Activity[]> {
