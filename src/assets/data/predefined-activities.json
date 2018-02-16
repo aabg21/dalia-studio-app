@@ -6,6 +6,1557 @@
       "portionSize": "כ-2 פרוסות (75 גרם)",
       "calories": 70,
       "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "סלמי/קוניאק",
+      "portionSize": "פרוסה",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "פרושוטו בקר",
+      "portionSize": "פרוסה",
+      "calories": 10,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "בשר בקר",
+      "portionSize": "כ 200 גרם אחרי בישול",
+      "calories": 350,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "המבורגר",
+      "portionSize": "100 גרם",
+      "calories": 500,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "כדורי בשר ברוטב עגבניות",
+      "portionSize": "כדור 80 גר'",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "קציצת בשר בגריל",
+      "portionSize": "יחידה",
+      "calories": 120,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "קבב כבש",
+      "portionSize": "יחידה",
+      "calories": 160,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "בשר כבש רזה",
+      "portionSize": "100 גרם",
+      "calories": 255,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "עוף  בגריל",
+      "portionSize": "רבע עוף",
+      "calories": 230,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "עוף מוקפץ עם ירקות",
+      "portionSize": "כ- 2 כוסות",
+      "calories": 320,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "חזה עוף בגריל",
+      "portionSize": "כף יד",
+      "calories": 180,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שיפודי הודו על האש",
+      "portionSize": "שיפוד",
+      "calories": 150,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "כבד עוף על האש",
+      "portionSize": "מנת הגשה",
+      "calories": 205,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שניצל חזה עוף מטוגן + פרורים",
+      "portionSize": "כף יד",
+      "calories": 300,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "נקנקיה",
+      "portionSize": "יחידה",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "קבנוס",
+      "portionSize": "100 גרם",
+      "calories": 354,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "נקנקית עוף יחיעם",
+      "portionSize": "יחידה",
+      "calories": 89,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "טבעול ליט",
+      "portionSize": "מנה",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "טופו",
+      "portionSize": "100 גרם",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "ביצה",
+      "portionSize": "1",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "חביתה / עין במרגרינה",
+      "portionSize": "1",
+      "calories": 110,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שקשוקה",
+      "portionSize": "1",
+      "calories": 250,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "אומלט גבינה",
+      "portionSize": "2 ביצים",
+      "calories": 300,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "טונה בשמן",
+      "portionSize": "150 גרם קופסה",
+      "calories": 270,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "טונה במים",
+      "portionSize": "151 גרם קופסה",
+      "calories": 192,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג רזה",
+      "portionSize": "100 גרם",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג סלמון מעושן",
+      "portionSize": "כ- 100 גרם",
+      "calories": 175,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "סלמון",
+      "portionSize": "מנת הגשה",
+      "calories": 245,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שניצל נסיכת הנילוס עם פרורים",
+      "portionSize": "מנת הגשה",
+      "calories": 275,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג פורל /דניס שלם בתנור",
+      "portionSize": "1",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג בורי בגריל",
+      "portionSize": "מנת הגשה 125 גרם",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג מלוח כבוש",
+      "portionSize": "מנת הגשה 125 גר",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "הרינג מעושן",
+      "portionSize": "מנת הגשה 125 גר",
+      "calories": 305,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג מלוח",
+      "portionSize": "100 גרם",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "דג ממולא (גפילטע פיש)",
+      "portionSize": "מנה",
+      "calories": 180,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "זהבון אצבעות",
+      "portionSize": "100 גרם",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שרימפס מבושלים",
+      "portionSize": "גדולים 4 גרם 100",
+      "calories": 91,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "קלמרי",
+      "portionSize": "100 גרם",
+      "calories": 175,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "צדפות",
+      "portionSize": "קטנות 10 גרם 200",
+      "calories": 140,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "אוייסטרים",
+      "portionSize": "6 בינוניים",
+      "calories": 84,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "סרדינים בשמן",
+      "portionSize": "100 גרם",
+      "calories": 355,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "חומוס",
+      "portionSize": "שתי כפות שטוחות",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "עדשים/אפונה",
+      "portionSize": "3/4 כוס",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שעועית לבנה מבושלת",
+      "portionSize": "חצי כוס",
+      "calories": 120,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "חומוס גרגרים שעועית",
+      "portionSize": "1/2 כוס",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחם רגיל",
+      "portionSize": "פרוסה",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחם קל",
+      "portionSize": "פרוסה",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פיתה רגילה",
+      "portionSize": "פרוסה",
+      "calories": 240,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פיתה קלה",
+      "portionSize": "יחידה",
+      "calories": 180,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחמניה",
+      "portionSize": "יחידה",
+      "calories": 180,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחמניה קלה",
+      "portionSize": "יחידה",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחם לבן",
+      "portionSize": "יחידה",
+      "calories": 60,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "לחמנית המבורגר",
+      "portionSize": "יחידה",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פתית רגילה",
+      "portionSize": "יחידה",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פתית ווסה",
+      "portionSize": "יחידה",
+      "calories": 16,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פריכית תירס",
+      "portionSize": "יחידה",
+      "calories": 22,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פריכית אורז",
+      "portionSize": "יחידה",
+      "calories": 36,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "משולש פיצה רגילה עם גבינה",
+      "portionSize": "משולש אחד",
+      "calories": 355,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פסטה עם רוטב",
+      "portionSize": "כוס",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "איטריות",
+      "portionSize": "כוס",
+      "calories": 140,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "בולונז",
+      "portionSize": "כוס",
+      "calories": 360,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פשטידת איטריות",
+      "portionSize": "100 גרם",
+      "calories": 210,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "תפוח אדמה",
+      "portionSize": "1",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "אורז",
+      "portionSize": "כוס",
+      "calories": 140,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "קוסקוס",
+      "portionSize": "כוס",
+      "calories": 140,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "Fiber One",
+      "portionSize": "2/3 כוס",
+      "calories": 64,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "דגנים למיניהם",
+      "portionSize": "2/3 כוס",
+      "calories": 110,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "גרנולה",
+      "portionSize": "כף",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "חטיף גרנולה",
+      "portionSize": "יחידה",
+      "calories": 110,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "תירס / גרעיני תירס",
+      "portionSize": "חצי כוס  / קלח בינוני",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "Kellogg's Raisin Bran",
+      "portionSize": "חצי קערית",
+      "calories": 160,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פופקורן גרגרים ללא שמן",
+      "portionSize": "100 גרם",
+      "calories": 400,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פופקורן תפוח ללא שמן",
+      "portionSize": "שתי כוסות",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "פופקורן תפוח בטעם חמאה",
+      "portionSize": "שתי כוסות",
+      "calories": 83,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "צ'יפס",
+      "portionSize": "מנת הגשה",
+      "calories": 540,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "בייגלה מלוח",
+      "portionSize": "חצי קערית",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBON",
+      "item": "מצה",
+      "portionSize": "1",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק עוף ביתי",
+      "portionSize": "כוס",
+      "calories": 57,
+      "recommendedSize": "חופשי"
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק ירקות עשיר",
+      "portionSize": "כוס",
+      "calories": 114,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק שעועית",
+      "portionSize": "כוס",
+      "calories": 82,
+      "recommendedSize": "חופשי"
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק בצל",
+      "portionSize": "כוס",
+      "calories": 32,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק סיני",
+      "portionSize": "חבילה",
+      "calories": 288,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק לייט",
+      "portionSize": "חבילה",
+      "calories": 58,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "מרק קפוא סנפרוסט",
+      "portionSize": "כוס",
+      "calories": 120,
+      "recommendedSize": "חופשי"
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "קישואים מבושלים",
+      "portionSize": "כוס",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "תרד מבושל",
+      "portionSize": "חצי כוס",
+      "calories": 20,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "ברוקולי מבושל",
+      "portionSize": "חצי כוס",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "חצילים בתנור",
+      "portionSize": "חצי כוס",
+      "calories": 20,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פטריות מבושלות",
+      "portionSize": "1/2 כוס",
+      "calories": 15,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פשטידת ברוקלי",
+      "portionSize": "100 גרם",
+      "calories": 119,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פשטידת בצל",
+      "portionSize": "מנה",
+      "calories": 190,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פשטידת פטריות",
+      "portionSize": "100 גרם",
+      "calories": 110,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פשטידת תרד",
+      "portionSize": "100 גרם",
+      "calories": 103,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "פשטידת ירקות",
+      "portionSize": "100 גרם",
+      "calories": 126,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "סופלה פטריות ותרד",
+      "portionSize": "מנת הגשה",
+      "calories": 240,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "סופלה ירקות",
+      "portionSize": "מנת הגשה",
+      "calories": 250,
+      "recommendedSize": ""
+    },
+    {
+      "category": "VEGETABLES",
+      "item": "ירקות מבושלים מעורבים",
+      "portionSize": "כוס",
+      "calories": 55,
+      "recommendedSize": "חופשי"
+    },
+    {
+      "category": "SALADS",
+      "item": "סלט חסה וירקות טריים+רוטב",
+      "portionSize": "כוס",
+      "calories": 60,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "SALADS",
+      "item": "סלט בלי רוטב",
+      "portionSize": "כוס",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "עגבניה",
+      "portionSize": "בינונית",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "סלט טונה +ביצים +ירקות",
+      "portionSize": "כוס",
+      "calories": 130,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "SALADS",
+      "item": "פלפל צלוי",
+      "portionSize": "מנה",
+      "calories": 75,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "חצילים במיונית",
+      "portionSize": "כוס",
+      "calories": 160,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "חצילים בטחינה",
+      "portionSize": "כוס",
+      "calories": 170,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "חציל כבוש בחומץ",
+      "portionSize": "מנת הגשה",
+      "calories": 150,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "גזר וצימוקים",
+      "portionSize": "כוס",
+      "calories": 205,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "SALADS",
+      "item": "וולדורף",
+      "portionSize": "כוס",
+      "calories": 180,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "SALADS",
+      "item": "cale slaw",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "SALADS",
+      "item": "פטריות",
+      "portionSize": "כוס",
+      "calories": 30,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "בצל",
+      "portionSize": "בינוני",
+      "calories": 42,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "תירס",
+      "portionSize": "קלח בינוני",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "אבוקדו",
+      "portionSize": "חצי בינוני",
+      "calories": 90,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "אספרגוס",
+      "portionSize": "6 גבעולים",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "שעועית ירוקה",
+      "portionSize": "חצי כוס",
+      "calories": 15,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "אדממה",
+      "portionSize": "100 גרם",
+      "calories": 123,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "זית",
+      "portionSize": "אחד קטן",
+      "calories": 9,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תפוח",
+      "portionSize": "1",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "קלמנטינה",
+      "portionSize": "2",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תפוז",
+      "portionSize": "1",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "אבטיח",
+      "portionSize": "כוס",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "אפרסק",
+      "portionSize": "1",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "אננס",
+      "portionSize": "1/2 כוס",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "ענבים",
+      "portionSize": "10 בודדים",
+      "calories": 20,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "מלון",
+      "portionSize": "רבע",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "אבטיח",
+      "portionSize": "כוס קוביות",
+      "calories": 42,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "שזיף",
+      "portionSize": "בינוני",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תות שדה",
+      "portionSize": "1/2 כוס",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "משמש",
+      "portionSize": "בינוני",
+      "calories": 18,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "בננה",
+      "portionSize": "בינונית",
+      "calories": 90,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "סברס",
+      "portionSize": "אחד",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תאנה גדולה מיובשת",
+      "portionSize": "אחת",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "משמשים מיובשים",
+      "portionSize": "2",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תפוח עץ מיובש",
+      "portionSize": "2 פרוסות",
+      "calories": 41,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "צימוקים",
+      "portionSize": "1.5 כף",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "תמרים מיובשים",
+      "portionSize": "2 תמרים",
+      "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "מיץ אשכוליות",
+      "portionSize": "כוס",
+      "calories": 115,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "מיץ תפוזים",
+      "portionSize": "כוס",
+      "calories": 115,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "שמן",
+      "portionSize": "כפית",
+      "calories": 45,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "רוטב סלט",
+      "portionSize": "כף",
+      "calories": 45,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "טחינה גולמית",
+      "portionSize": "כף",
+      "calories": 110,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "טחינה",
+      "portionSize": "כף",
+      "calories": 45,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "מיונז",
+      "portionSize": "כפית",
+      "calories": 45,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "חומוס",
+      "portionSize": "כף",
+      "calories": 60,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "סלט טורקי",
+      "portionSize": "כף",
+      "calories": 16,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "מטבוחה",
+      "portionSize": "כף",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "טבולה עם בורגול",
+      "portionSize": "כוס",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "רוטב עגבניות/קטשופ",
+      "portionSize": "כפית",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "אגוזים",
+      "portionSize": "3",
+      "calories": 50,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "פיצוחים",
+      "portionSize": "חופן קטנה",
+      "calories": 210,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "שקדים",
+      "portionSize": "6",
+      "calories": 50,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "פיסטוק חלבי עם קליפה",
+      "portionSize": "חצי כוס",
+      "calories": 460,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "אגוזי קשיו",
+      "portionSize": "6 יחידות",
+      "calories": 85,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "אגוזי לוז",
+      "portionSize": "חצי כוס",
+      "calories": 506,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "בוטנים קלופים",
+      "portionSize": "חצי כוס",
+      "calories": 360,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "אגוזי פקאן",
+      "portionSize": "6 יחידות",
+      "calories": 95,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FAT",
+      "item": "גרעינים שחורים בקליפה",
+      "portionSize": "כף",
+      "calories": 50,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "יוגורט 0%",
+      "portionSize": "1",
+      "calories": 55,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "יוגורט 1.5%",
+      "portionSize": "1",
+      "calories": 120,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "יוגורט  3%",
+      "portionSize": "1",
+      "calories": 165,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "שמנת מתוקה 38%",
+      "portionSize": "כף",
+      "calories": 36,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "שמנת מתוקה 15%",
+      "portionSize": "כף",
+      "calories": 16,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "שמנת מתוקה 10%",
+      "portionSize": "כף",
+      "calories": 13,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "גבינת לבנה 3%",
+      "portionSize": "רבע קופסה",
+      "calories": 50,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "גבינה לבנה 5%",
+      "portionSize": "רבע קופסה",
+      "calories": 61,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "קוטג' 0.5 %",
+      "portionSize": "רבע קופסה",
+      "calories": 37,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "קוטג' 5%",
+      "portionSize": "רבע קופסה",
+      "calories": 63,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "בולגרית 5%",
+      "portionSize": "רבע קופסה",
+      "calories": 85,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "צפתית / בולגרית 9%",
+      "portionSize": "רבע קופסה",
+      "calories": 172,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "ריקוטה גד 5%",
+      "portionSize": "רבע קופסה",
+      "calories": 58,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "גבינה צהובה - העמק",
+      "portionSize": "פרוסה",
+      "calories": 91,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "בירנית / אביבית",
+      "portionSize": "100 גרם",
+      "calories": 264,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "קממבר 30%",
+      "portionSize": "שליש קופסה - 42 גרם",
+      "calories": 146,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "פרמיז'ן",
+      "portionSize": "כף",
+      "calories": 25,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "סופלה גבינה",
+      "portionSize": "מנת הגשה",
+      "calories": 225,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חמאה",
+      "portionSize": "כפית",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "קקאו",
+      "portionSize": "כוס עם 2 כפיות",
+      "calories": 154,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "אקטימל",
+      "portionSize": "1",
+      "calories": 88,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "עוגת גבינה אפויה",
+      "portionSize": "פרוסה",
+      "calories": 325,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "חומוס בפיתה",
+      "portionSize": "אחד",
+      "calories": 600,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "מנת פלאפל",
+      "portionSize": "מנה",
+      "calories": 670,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "סושי - שרימפס טמפורה",
+      "portionSize": "רול",
+      "calories": 508,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "סושי - קליפורניה",
+      "portionSize": "רול",
+      "calories": 255,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "עוגה",
+      "portionSize": "מנה",
+      "calories": 700,
+      "recommendedSize": "לפי מידה"
+    },
+    {
+      "category": "BONUS",
+      "item": "בורקס קטן",
+      "portionSize": "אחד",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "בוקרס גדול",
+      "portionSize": "אחד",
+      "calories": 350,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "קרואסון גדול",
+      "portionSize": "אחד",
+      "calories": 500,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "סוכר לבן",
+      "portionSize": "כפית",
+      "calories": 17,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "ריבה דלת קלוריות",
+      "portionSize": "כף",
+      "calories": 16,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "ריבה",
+      "portionSize": "כף",
+      "calories": 55,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "שוקולד חלב",
+      "portionSize": "50 גרם",
+      "calories": 280,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "שוקולד למריחה",
+      "portionSize": "כף",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "שוקו 2%",
+      "portionSize": "כוס",
+      "calories": 180,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "וופלים קטנים",
+      "portionSize": "1",
+      "calories": 28,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "עוגיות חמאה",
+      "portionSize": "1",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "עוגיות ללא סוכר",
+      "portionSize": "1",
+      "calories": 26,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "רוגאלאך",
+      "portionSize": "1",
+      "calories": 160,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "גרנולה בר",
+      "portionSize": "1",
+      "calories": 115,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "במבה",
+      "portionSize": "שקית קטנה",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "חטיף תפוחי עץ",
+      "portionSize": "שקית",
+      "calories": 168,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "חטיף אורז",
+      "portionSize": "זוג",
+      "calories": 60,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "חטיף שומשום",
+      "portionSize": "אחד",
+      "calories": 29,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "חטיף סויה",
+      "portionSize": "אחד",
+      "calories": 19,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "טעמי/טורטית/כיף-כף",
+      "portionSize": "45 גרם",
+      "calories": 220,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "קרמבו",
+      "portionSize": "אחד",
+      "calories": 150,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "גלידה שטראוס",
+      "portionSize": "כוס",
+      "calories": 220,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "שלגון דיאטטי",
+      "portionSize": "1",
+      "calories": 35,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "שלגון מצופה",
+      "portionSize": "יחידה",
+      "calories": 186,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "טילון",
+      "portionSize": "יחידה",
+      "calories": 279,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "מיץ תפוזים סחוט",
+      "portionSize": "כוס",
+      "calories": 115,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "לימונדה 10% סוכר",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "משקה צ'ופר",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "יין אדום/לבן יבש",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "בירה",
+      "portionSize": "כוס",
+      "calories": 100,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "קולה",
+      "portionSize": "פחית",
+      "calories": 115,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "וויסקי/וודקה/ג'ין/ברנדי",
+      "portionSize": "כוסית",
+      "calories": 135,
+      "recommendedSize": ""
+    },
+    {
+      "category": "BONUS",
+      "item": "מרגריטה וכו' (קוקטילים)",
+      "portionSize": "כוס",
+      "calories": 350,
+      "recommendedSize": ""
+    }
+  ],
+  "sport": [
+    {
+      "name": "הליכה / ריצה",
+      "duration": "45 יומי",
+      "calories": 300,
+      "pulse": "112-146"
+    },
+    {
+      "name": "אופניים",
+      "duration": "פעמיים",
+      "calories": null,
+      "pulse": "112-146"
+    },
+    {
+      "name": "שיעור כושר בסטודיו",
+      "duration": "פעמיים",
+      "calories": 200,
+      "pulse": "112-146"
+    },
+    {
+      "name": "שחיה",
+      "duration": "30 דקות",
+      "calories": 300,
+      "pulse": "112-146"
+    },
+    {
+      "name": "מכשירים בחדר כושר",
+      "duration": "יומי",
+      "calories": 300,
+      "pulse": "112-146"
     }
   ]
 }

@@ -1,3 +1,3 @@
 export abstract class Activity {
-  protected type: string;
+  protected abstract type: string;
 }

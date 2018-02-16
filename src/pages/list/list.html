@@ -5,12 +5,30 @@
     </button>
     <ion-title>פעילויות</ion-title>
   </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-searchbar
+      placeholder="חיפוש"
+      (ionInput)="filterItems($event)">
+    </ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+  <div *ngIf="!items">
+    <ion-item-group *ngFor="let group of categoryItems">
+      <ion-item-divider color="light">{{ group.category }}</ion-item-divider>
+      <button ion-item *ngFor="let item of group.items" (click)="itemTapped(item)">
+        {{item.title}}
+        <div class="item-note" item-right>
+          {{item.note}}
+        </div>
+      </button>
+    </ion-item-group>
+  </div>
+
+  <ion-list *ngIf="items">
+    <button ion-item *ngFor="let item of items" (click)="itemTapped(item)">
       {{item.title}}
       <div class="item-note" item-right>
         {{item.note}}

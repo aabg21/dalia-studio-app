@@ -16,13 +16,7 @@ export class PredefinedFoodActivity extends FoodActivity {
   recommendedSize: string;
 
   constructor({category, item, portionSize, calories, recommendedSize}: PredefinedFoodJSON) {
-    super({
-      category: FoodCategoryEnum[category],
-      item,
-      calories,
-      time: PREDEFINED_ITEM_DATE,
-      amount: 1,
-    });
+    super(item, FoodCategoryEnum[category], PREDEFINED_ITEM_DATE, 1, calories);
 
     this.portionSize = portionSize;
     this.recommendedSize = recommendedSize;

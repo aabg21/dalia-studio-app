@@ -7,27 +7,12 @@ export function isSportActivity (activity: Activity): activity is SportActivity 
 export class SportActivity extends Activity {
   protected type = 'SPORT';
 
-  name: string;
-  duration: number;
-  time: Date;
-  calories: number;
-
-  constructor({
-    name,
-    duration,
-    time,
-    calories,
-  }: {
-    name: string;
-    duration: number;
-    time: Date;
-    calories: number;
-  }) {
+  constructor(
+    public name: string,
+    public duration: number,
+    public time: Date,
+    public calories: number
+  ) {
     super();
-
-    this.name = name;
-    this.duration = duration;
-    this.time = time;
-    this.calories = calories;
   }
 }

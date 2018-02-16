@@ -1,7 +1,7 @@
 export enum FoodCategoryEnum {
   PROTEIN,
   CARBON,
-  VEGTABLES,
+  VEGETABLES,
   SALADS,
   FRUITS,
   FAT,
@@ -10,10 +10,21 @@ export enum FoodCategoryEnum {
   EXTRAS,
 }
 
-export const FOOD_CATREGORY_NAMES = {
+export const FOOD_CATEGORY_ORDER = [
+  FoodCategoryEnum.PROTEIN,
+  FoodCategoryEnum.CARBON,
+  FoodCategoryEnum.VEGETABLES,
+  FoodCategoryEnum.SALADS,
+  FoodCategoryEnum.FRUITS,
+  FoodCategoryEnum.FAT,
+  FoodCategoryEnum.DAIRY,
+  FoodCategoryEnum.BONUS,
+];
+
+export const FOOD_CATREGORY_NAMES: {[category: number]: string} = {
   [FoodCategoryEnum.PROTEIN]: 'חלבון',
   [FoodCategoryEnum.CARBON]: 'פחמימות',
-  [FoodCategoryEnum.VEGTABLES]: 'ירקות',
+  [FoodCategoryEnum.VEGETABLES]: 'ירקות',
   [FoodCategoryEnum.SALADS]: 'סלטים',
   [FoodCategoryEnum.FRUITS]: 'פירות',
   [FoodCategoryEnum.FAT]: 'שומן',

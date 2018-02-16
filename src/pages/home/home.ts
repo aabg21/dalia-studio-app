@@ -39,10 +39,14 @@ export class HomePage {
   }
 
   public goToSportList() {
-    this.navCtrl.push(ListPage);
+    this.navCtrl.push(ListPage, {
+      type: 'SPORT'
+    });
   }
 
   public goToFoodList() {
-    this.navCtrl.push(ListPage)
+    this.navCtrl.push(ListPage, {
+      type: 'FOOD'
+    });
   }
 }

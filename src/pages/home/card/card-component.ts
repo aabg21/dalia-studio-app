@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Activity} from '../../../providers/activity/activity';
-import {isSportActivity, SportActivity} from '../../../providers/activity/sport-activity';
-import {isFoodActivity, FoodActivity} from '../../../providers/activity/food-activity';
+import {isSportActivity} from '../../../providers/activity/sport-activity';
+import {isFoodActivity} from '../../../providers/activity/food-activity';
 
 @Component({
   selector: 'activity-card',
@@ -13,16 +13,15 @@ import {isFoodActivity, FoodActivity} from '../../../providers/activity/food-act
   `
 })
 export class CardComponent {
+  public header: string;
+
   @Input()
   public set activity(activity: Activity) {
-    switch (true) {
-      case isSportActivity(activity):
-        this.header = (<SportActivity>activity).name;
-        break;
-      case isFoodActivity(activity):
-        this.header = (<FoodActivity>activity).item;
+    if (isSportActivity(activity)) {
+      this.header = activity.name;
+
+    } else if (isFoodActivity(activity)) {
+      this.header = activity.item;
     }
   }
-
-  public header: string;
 }

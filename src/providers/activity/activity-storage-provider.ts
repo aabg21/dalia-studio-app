@@ -3,12 +3,7 @@ import {Storage} from '@ionic/storage';
 import {Activity} from './activity';
 import {SportActivity} from './sport-activity';
 
-const sport = new SportActivity({
-  name: 'חתירה',
-  calories: 20,
-  time: new Date(),
-  duration: 60,
-});
+const sport = new SportActivity('חתירה', 20, new Date(), 60);
 
 @Injectable()
 export class ActivityStorageProvider {
@@ -27,16 +22,19 @@ export class ActivityStorageProvider {
     return Promise.resolve(this.activities || this.promise);
   }
 
-  public saveActivities(...activities: Activity[]) {
+  public save() {
+    this.storage.set(this.KEY, this.activities);
+  }
+
+  public addActivities(...activities: Activity[]) {
     if (activities.length > 0) {
       this.activities = this.activities.concat(activities);
+      this.save();
     }
-
-    this.storage.set(this.KEY, this.activities);
   }
 
   public deleteActivity(activityToDelete: Activity) {
     this.activities = this.activities.filter(activity => activity !== activityToDelete);
-    this.saveActivities();
+    this.save();
   }
 }

@@ -8,31 +8,13 @@ export function isFoodActivity (activity: Activity): activity is FoodActivity {
 export class FoodActivity extends Activity {
   protected type = 'FOOD';
 
-  item: string;
-  category: FoodCategoryEnum;
-  time: Date;
-  amount: number;
-  calories: number;
-
-  constructor({
-    item,
-    category,
-    time,
-    amount,
-    calories,
-  }: {
-    item: string;
-    category: FoodCategoryEnum;
-    time: Date;
-    amount: number;
-    calories: number;
-  }) {
+  constructor(
+    public item: string,
+    public category: FoodCategoryEnum,
+    public time: Date,
+    public amount: number,
+    public calories: number
+  ) {
     super();
-
-    this.item = item;
-    this.category = category;
-    this.time = time;
-    this.amount = amount;
-    this.calories = calories;
   }
 }

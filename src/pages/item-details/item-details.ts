@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
+import { Activity } from '../../providers/activity/activity';
+import {isSportActivity} from '../../providers/activity/sport-activity';
+import {isFoodActivity} from '../../providers/activity/food-activity';
+import {PredefinedSportActivity} from '../../providers/predefined-activity/predefined-sport-activity';
+import {PredefinedFoodActivity} from '../../providers/predefined-activity/predefined-food-activity';
 
 
 @Component({
@@ -8,10 +13,21 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'item-details.html'
 })
 export class ItemDetailsPage {
-  selectedItem: any;
+  public activity: Activity;
+  public title: string;
+  public type: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
+    const activity: Activity = navParams.get('activity');
+
+    if (isSportActivity(activity)) {
+      this.activity = <PredefinedSportActivity>activity;
+      this.title = activity.name;
+      this.type = 'SPORT';
+    } else if (isFoodActivity(activity)) {
+      this.activity = <PredefinedFoodActivity>activity;
+      this.title = activity.item;
+      this.type = 'FOOD';
+    }
   }
 }
