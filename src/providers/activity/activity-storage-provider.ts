@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Storage} from '@ionic/storage';
 import {Activity} from './activity';
-import {SportActivity} from './sport-activity';
 
 @Injectable()
 export class ActivityStorageProvider {

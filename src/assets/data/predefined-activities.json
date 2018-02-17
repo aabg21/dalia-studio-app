@@ -296,13 +296,6 @@
     },
     {
       "category": "PROTEIN",
-      "item": "חומוס",
-      "portionSize": "שתי כפות שטוחות",
-      "calories": 70,
-      "recommendedSize": ""
-    },
-    {
-      "category": "PROTEIN",
       "item": "עדשים/אפונה",
       "portionSize": "3/4 כוס",
       "calories": 70,
@@ -317,8 +310,8 @@
     },
     {
       "category": "PROTEIN",
-      "item": "חומוס גרגרים שעועית",
-      "portionSize": "1/2 כוס",
+      "item": "גרגירי חומוס",
+      "portionSize": "חצי כוס",
       "calories": 70,
       "recommendedSize": ""
     },
@@ -457,16 +450,16 @@
     },
     {
       "category": "CARBON",
-      "item": "קוסקוס",
+      "item": "קינואה",
       "portionSize": "כוס",
-      "calories": 140,
+      "calories": 220,
       "recommendedSize": ""
     },
     {
       "category": "CARBON",
-      "item": "Fiber One",
-      "portionSize": "2/3 כוס",
-      "calories": 64,
+      "item": "קוסקוס",
+      "portionSize": "כוס",
+      "calories": 140,
       "recommendedSize": ""
     },
     {
@@ -495,13 +488,6 @@
       "item": "תירס / גרעיני תירס",
       "portionSize": "חצי כוס  / קלח בינוני",
       "calories": 70,
-      "recommendedSize": ""
-    },
-    {
-      "category": "CARBON",
-      "item": "Kellogg's Raisin Bran",
-      "portionSize": "חצי קערית",
-      "calories": 160,
       "recommendedSize": ""
     },
     {
@@ -709,6 +695,20 @@
     },
     {
       "category": "SALADS",
+      "item": "מלפפון",
+      "portionSize": "בינוני",
+      "calories": 15,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
+      "item": "גזר",
+      "portionSize": "בינוני",
+      "calories": 40,
+      "recommendedSize": ""
+    },
+    {
+      "category": "SALADS",
       "item": "סלט טונה +ביצים +ירקות",
       "portionSize": "כוס",
       "calories": 130,
@@ -758,7 +758,7 @@
     },
     {
       "category": "SALADS",
-      "item": "cale slaw",
+      "item": "קולסלאו",
       "portionSize": "כוס",
       "calories": 100,
       "recommendedSize": "לפי מידה"
@@ -1339,9 +1339,9 @@
     },
     {
       "category": "BONUS",
-      "item": "שוקולד חלב",
-      "portionSize": "50 גרם",
-      "calories": 280,
+      "item": "שוקולד מריר/חלב",
+      "portionSize": "100 גרם",
+      "calories": 530,
       "recommendedSize": ""
     },
     {
@@ -1381,7 +1381,7 @@
     },
     {
       "category": "BONUS",
-      "item": "רוגאלאך",
+      "item": "רוגלך",
       "portionSize": "1",
       "calories": 160,
       "recommendedSize": ""
@@ -1501,7 +1501,7 @@
     {
       "category": "BONUS",
       "item": "בירה",
-      "portionSize": "כוס",
+      "portionSize": "שליש",
       "calories": 100,
       "recommendedSize": ""
     },
@@ -1517,6 +1517,48 @@
       "item": "וויסקי/וודקה/ג'ין/ברנדי",
       "portionSize": "כוסית",
       "calories": 135,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב קוקוס",
+      "portionSize": "כף",
+      "calories": 23,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב קוקוס",
+      "portionSize": "כוס",
+      "calories": 467,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FATS",
+      "item": "שמן קוקוס",
+      "portionSize": "כפית",
+      "calories": 39,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב שקדים",
+      "portionSize": "כוס",
+      "calories": 60,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב סויה",
+      "portionSize": "כוס",
+      "calories": 130,
+      "recommendedSize": ""
+    },
+    {
+      "category": "DAIRY",
+      "item": "חלב אורז",
+      "portionSize": "כוס",
+      "calories": 120,
       "recommendedSize": ""
     },
     {

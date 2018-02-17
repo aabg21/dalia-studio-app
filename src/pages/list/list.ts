@@ -41,7 +41,7 @@ export class ListPage {
       this.allItems = predefinedActivities.foodActivities.map(food => (<Item>{
         activity: food,
         title: food.item,
-        note: `${food.calories} קלוריות למנה `
+        note: food.portionSize
       }));
 
       const grouped = groupBy(this.allItems, 'activity.category');
