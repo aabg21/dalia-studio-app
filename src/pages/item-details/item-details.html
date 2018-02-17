@@ -1,10 +1,79 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button (click)="save()" [disabled]="isInvalid()">
+        <span ion-text color="primary">שמור</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
     <ion-title>{{title}}</ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h3 text-center>Hello</h3>
-  <h4 text-center>Goodbye</h4>
+  <ion-list>
+    <ion-list-header>תאריך ושעה</ion-list-header>
+    <ion-item>
+      <ion-label>תאריך</ion-label>
+      <ion-datetime
+        [(ngModel)]="isoDate"
+        dayNames="ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת"
+        monthNames="ינואר,פברואר,מרץ,אפריל,מאי,יוני,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר"
+        monthShortNames="ינו׳,פב׳,מרץ,אפר׳,מאי,יוני,יולי,אוג׳,ספט׳,אוק׳,נוב׳,דצ׳"
+        displayFormat="DDDD D MMM YYYY"
+        pickerFormat="DD MMMM YYYY"
+        min="2017"
+        doneText="אישור"
+        cancelText="ביטול">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>שעה</ion-label>
+      <ion-datetime
+        [(ngModel)]="isoDate"
+        displayFormat="HH:mm"
+        pickerFormat="HH mm"
+        doneText="אישור"
+        cancelText="ביטול">
+      </ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>פרטים נוספים</ion-list-header>
+    <ion-item *ngIf="type === 'SPORT'">
+      <ion-label>זמן בדקות</ion-label>
+      <ion-input
+        type="number"
+        [(ngModel)]="model.duration"
+        (input)="setCalories($event)"
+        min="0">
+      </ion-input>
+    </ion-item>
+    <ion-item *ngIf="type === 'FOOD'">
+      <ion-note>גודל מנה: {{activity.portionSize}}</ion-note>
+    </ion-item>
+    <ion-item *ngIf="type === 'FOOD'">
+      <ion-label>מספר מנות</ion-label>
+      <ion-input
+        type="number"
+        [(ngModel)]="model.amount"
+        (input)="setCalories($event)"
+        min="0">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>קלוריות</ion-label>
+      <ion-input
+        type="number"
+        [(ngModel)]="model.calories"
+        min="0">
+      </ion-input>
+    </ion-item>
+  </ion-list>
 </ion-content>

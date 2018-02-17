@@ -33,9 +33,9 @@ export class HomePage {
   constructor(
     private activityStorage: ActivityStorageProvider,
     private navCtrl: NavController,
-    private preAct: PredefinedActivityProvider
+    preAct: PredefinedActivityProvider
   ) {
-    this.activityStorage.getActivities().then(activities => this.activities = activities);
+    preAct.fetch();
   }
 
   public goToSportList() {
@@ -48,5 +48,11 @@ export class HomePage {
     this.navCtrl.push(ListPage, {
       type: 'FOOD'
     });
+  }
+
+  public ionViewWillEnter() {
+    this.activityStorage
+      .getActivities()
+      .then(activities => this.activities = activities);
   }
 }

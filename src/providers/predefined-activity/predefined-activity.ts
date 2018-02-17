@@ -16,9 +16,10 @@ export class PredefinedActivityProvider {
   private _foodActivities: PredefinedFoodActivity[];
   private _sportActivities: PredefinedSportActivity[];
 
-  constructor(public http: HttpClient) {
-    console.log('START');
-    http
+  constructor(private http: HttpClient) {}
+
+  public fetch() {
+    this.http
       .get('assets/data/predefined-activities.json')
       .subscribe((response: {food: PredefinedFoodJSON[], sport: PredefinedSportJSON[]}) => {
         this._foodActivities = response.food.map(item => new PredefinedFoodActivity(item));

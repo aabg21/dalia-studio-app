@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
+import {ModalController, NavController, NavParams} from 'ionic-angular';
 
 import { groupBy } from 'lodash';
 
@@ -30,9 +30,10 @@ export class ListPage {
   public items: Item[];
 
   constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
-    public predefinedActivities: PredefinedActivityProvider
+    private modalCtrl: ModalController,
+    private navCtrl: NavController,
+    navParams: NavParams,
+    predefinedActivities: PredefinedActivityProvider
   ) {
     const isFood = navParams.get('type') === 'FOOD';
 
@@ -71,6 +72,14 @@ export class ListPage {
   }
 
   itemTapped(item: Item) {
-    this.navCtrl.push(ItemDetailsPage, item);
+    const modal = this.modalCtrl.create(ItemDetailsPage, item);
+
+    modal.onDidDismiss((result: boolean) => {
+      if (result) {
+        this.navCtrl.popToRoot();
+      }
+    });
+
+    modal.present();
   }
 }
