@@ -107,7 +107,7 @@
     },
     {
       "category": "PROTEIN",
-      "item": "נקנקיה",
+      "item": "נקניקייה",
       "portionSize": "יחידה",
       "calories": 100,
       "recommendedSize": ""
@@ -121,16 +121,9 @@
     },
     {
       "category": "PROTEIN",
-      "item": "נקנקית עוף יחיעם",
+      "item": "נקניקיית עוף יחיעם",
       "portionSize": "יחידה",
       "calories": 89,
-      "recommendedSize": ""
-    },
-    {
-      "category": "PROTEIN",
-      "item": "טבעול ליט",
-      "portionSize": "מנה",
-      "calories": 70,
       "recommendedSize": ""
     },
     {
@@ -149,7 +142,7 @@
     },
     {
       "category": "PROTEIN",
-      "item": "חביתה / עין במרגרינה",
+      "item": "חביתה / עין",
       "portionSize": "1",
       "calories": 110,
       "recommendedSize": ""
@@ -254,13 +247,6 @@
     },
     {
       "category": "PROTEIN",
-      "item": "זהבון אצבעות",
-      "portionSize": "100 גרם",
-      "calories": 80,
-      "recommendedSize": ""
-    },
-    {
-      "category": "PROTEIN",
       "item": "שרימפס מבושלים",
       "portionSize": "גדולים 4 גרם 100",
       "calories": 91,
@@ -296,14 +282,21 @@
     },
     {
       "category": "PROTEIN",
-      "item": "עדשים/אפונה",
-      "portionSize": "3/4 כוס",
-      "calories": 70,
+      "item": "אפונה",
+      "portionSize": "כוס",
+      "calories": 100,
       "recommendedSize": ""
     },
     {
       "category": "PROTEIN",
-      "item": "שעועית לבנה מבושלת",
+      "item": "עדשים",
+      "portionSize": "כוס",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "PROTEIN",
+      "item": "שעועית לבנה",
       "portionSize": "חצי כוס",
       "calories": 120,
       "recommendedSize": ""
@@ -316,217 +309,231 @@
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
+      "item": "טורטיה",
+      "portionSize": "יחידה",
+      "calories": 200,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBS",
       "item": "לחם רגיל",
       "portionSize": "פרוסה",
       "calories": 80,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "לחם קל",
       "portionSize": "פרוסה",
       "calories": 40,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פיתה רגילה",
       "portionSize": "פרוסה",
       "calories": 240,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פיתה קלה",
       "portionSize": "יחידה",
       "calories": 180,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "לחמניה",
       "portionSize": "יחידה",
       "calories": 180,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "לחמניה קלה",
       "portionSize": "יחידה",
       "calories": 80,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "לחם לבן",
       "portionSize": "יחידה",
       "calories": 60,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "לחמנית המבורגר",
       "portionSize": "יחידה",
       "calories": 130,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פתית רגילה",
       "portionSize": "יחידה",
       "calories": 35,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פתית ווסה",
       "portionSize": "יחידה",
       "calories": 16,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פריכית תירס",
       "portionSize": "יחידה",
       "calories": 22,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פריכית אורז",
       "portionSize": "יחידה",
       "calories": 36,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "משולש פיצה רגילה עם גבינה",
       "portionSize": "משולש אחד",
       "calories": 355,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פסטה עם רוטב",
       "portionSize": "כוס",
       "calories": 200,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "איטריות",
       "portionSize": "כוס",
       "calories": 140,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "בולונז",
       "portionSize": "כוס",
       "calories": 360,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פשטידת איטריות",
       "portionSize": "100 גרם",
       "calories": 210,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "תפוח אדמה",
       "portionSize": "1",
       "calories": 70,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "אורז",
       "portionSize": "כוס",
       "calories": 140,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "קינואה",
       "portionSize": "כוס",
       "calories": 220,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
+      "item": "צ׳יה",
+      "portionSize": "כף",
+      "calories": 70,
+      "recommendedSize": ""
+    },
+    {
+      "category": "CARBS",
       "item": "קוסקוס",
       "portionSize": "כוס",
       "calories": 140,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "דגנים למיניהם",
       "portionSize": "2/3 כוס",
       "calories": 110,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "גרנולה",
       "portionSize": "כף",
       "calories": 80,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "חטיף גרנולה",
       "portionSize": "יחידה",
       "calories": 110,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "תירס / גרעיני תירס",
-      "portionSize": "חצי כוס  / קלח בינוני",
+      "portionSize": "חצי כוס / קלח בינוני",
       "calories": 70,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פופקורן גרגרים ללא שמן",
       "portionSize": "100 גרם",
       "calories": 400,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פופקורן תפוח ללא שמן",
       "portionSize": "שתי כוסות",
       "calories": 70,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "פופקורן תפוח בטעם חמאה",
       "portionSize": "שתי כוסות",
       "calories": 83,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "צ'יפס",
       "portionSize": "מנת הגשה",
       "calories": 540,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "בייגלה מלוח",
       "portionSize": "חצי קערית",
       "calories": 200,
       "recommendedSize": ""
     },
     {
-      "category": "CARBON",
+      "category": "CARBS",
       "item": "מצה",
       "portionSize": "1",
       "calories": 130,
@@ -723,7 +730,7 @@
     },
     {
       "category": "SALADS",
-      "item": "חצילים במיונית",
+      "item": "חצילים במיונז",
       "portionSize": "כוס",
       "calories": 160,
       "recommendedSize": ""
@@ -922,6 +929,13 @@
       "item": "תאנה גדולה מיובשת",
       "portionSize": "אחת",
       "calories": 80,
+      "recommendedSize": ""
+    },
+    {
+      "category": "FRUITS",
+      "item": "גוג׳י ברי",
+      "portionSize": "רבע כוס",
+      "calories": 90,
       "recommendedSize": ""
     },
     {

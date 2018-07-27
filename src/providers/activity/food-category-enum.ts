@@ -1,6 +1,6 @@
 export enum FoodCategoryEnum {
   PROTEIN,
-  CARBON,
+  CARBS,
   VEGETABLES,
   SALADS,
   FRUITS,
@@ -12,7 +12,7 @@ export enum FoodCategoryEnum {
 
 export const FOOD_CATEGORY_ORDER = [
   FoodCategoryEnum.PROTEIN,
-  FoodCategoryEnum.CARBON,
+  FoodCategoryEnum.CARBS,
   FoodCategoryEnum.VEGETABLES,
   FoodCategoryEnum.SALADS,
   FoodCategoryEnum.FRUITS,
@@ -23,7 +23,7 @@ export const FOOD_CATEGORY_ORDER = [
 
 export const FOOD_CATREGORY_NAMES: {[category: number]: string} = {
   [FoodCategoryEnum.PROTEIN]: 'חלבון',
-  [FoodCategoryEnum.CARBON]: 'פחמימות',
+  [FoodCategoryEnum.CARBS]: 'פחמימות',
   [FoodCategoryEnum.VEGETABLES]: 'ירקות',
   [FoodCategoryEnum.SALADS]: 'סלטים',
   [FoodCategoryEnum.FRUITS]: 'פירות',

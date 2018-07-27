@@ -58,6 +58,9 @@
     <ion-item *ngIf="type === 'FOOD'">
       <ion-note>גודל מנה: {{activity.portionSize}}</ion-note>
     </ion-item>
+    <ion-item *ngIf="type === 'FOOD' && activity.recommendedSize">
+      <ion-note>כמות מומלצת: {{activity.recommendedSize}}</ion-note>
+    </ion-item>
     <ion-item *ngIf="type === 'FOOD'">
       <ion-label>מספר מנות</ion-label>
       <ion-input

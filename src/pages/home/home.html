@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>הסטודיו של דליה</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab top left edge>
+    <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="goToSportList()"><ion-icon name="bicycle"></ion-icon></button>
+      <button ion-fab (click)="goToFoodList()"><ion-icon name="cafe"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item-group *ngFor="let day of activities; let isToday = first;">
+      <ion-item-divider color="light">
+        {{ day.dateFormatted }}
+        <ion-badge *ngIf="isToday">היום</ion-badge>
+      </ion-item-divider>
+
+      <ion-item *ngFor="let action of day.actions">
+        <ion-icon name="alert" item-start></ion-icon>
+        <h2>עוד לא הוספת כל פעילות</h2>
+        <p>זה עוד לא מאוחר - קדימה!</p>
+      </ion-item>
+
+      <ion-item-sliding *ngFor="let activity of day.activities">
+        <ion-item>
+          <ion-icon name="cafe" item-start></ion-icon>
+          <h2>מאפה גבינה</h2>
+          <p>בשעה 7:00</p>
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button color="primary">
+            <ion-icon name="create"></ion-icon>
+            עריכה
+          </button>
+          <button ion-button color="danger">
+            <ion-icon name="trash"></ion-icon>
+            מחיקה
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-group>
+  </ion-list>
+
+  <ng-template>
+    <ion-item-group>
+      <ion-item-divider color="light">שלישי</ion-item-divider>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">שני</ion-item-divider>
+      <ion-item>
+        <ion-icon name="bicycle" item-start></ion-icon>
+        <h2>חתירה</h2>
+        <p>בשעה 7:00</p>
+        <ion-note item-end>100 קל׳</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        <h2>מאפה גבינה</h2>
+        <p>בשעה 7:00</p>
+      </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">ראשון</ion-item-divider>
+      <ion-item>
+        <ion-icon name="clipboard" item-start></ion-icon>
+        <h2>משקל התחלה</h2>
+        <p>טרם עדכנת משקל לשבוע זה</p>
+        <button ion-button clear item-end>עדכון</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="bulb" item-start></ion-icon>
+        <h2>תובנות זמינות עבורך</h2>
+        <p>תובנות משבוע שעבר זמינות כעת</p>
+        <button ion-button clear item-end>צפייה</button>
+      </ion-item>
+    </ion-item-group>
+  </ng-template>
+
+  <ion-infinite-scroll (ionInfinite)="$event.waitFor(fetchActivities())">
+    <ion-infinite-scroll-content
+      loadingSpinner="dots">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar start color="light">
+    <p>בנק קלוריות שבועי: 1560</p>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="help"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

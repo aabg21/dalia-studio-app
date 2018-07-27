@@ -14,6 +14,11 @@ import { ActivityStorageProvider } from '../providers/activity/activity-storage-
 import {IonicStorageModule} from '@ionic/storage';
 import { PredefinedActivityProvider } from '../providers/predefined-activity/predefined-activity';
 import {HttpClientModule} from '@angular/common/http';
+import { SettingsProvider } from '../providers/settings/settings';
+import {locale} from 'moment';
+import { ListGeneratorProvider } from '../providers/list-generator/list-generator';
+
+locale('he');
 
 @NgModule({
   declarations: [
@@ -43,7 +48,9 @@ import {HttpClientModule} from '@angular/common/http';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ActivityStorageProvider,
-    PredefinedActivityProvider
+    PredefinedActivityProvider,
+    SettingsProvider,
+    ListGeneratorProvider
   ]
 })
 export class AppModule {}

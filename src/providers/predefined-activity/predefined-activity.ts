@@ -5,25 +5,19 @@ import {PredefinedSportActivity, PredefinedSportJSON} from './predefined-sport-a
 
 @Injectable()
 export class PredefinedActivityProvider {
-  get sportActivities(): PredefinedSportActivity[] {
-    return this._sportActivities;
-  }
+  constructor (
+    private http: HttpClient
+  ) {}
 
-  get foodActivities(): PredefinedFoodActivity[] {
-    return this._foodActivities;
-  }
-
-  private _foodActivities: PredefinedFoodActivity[];
-  private _sportActivities: PredefinedSportActivity[];
-
-  constructor(private http: HttpClient) {}
+  public foodActivities: PredefinedFoodActivity[];
+  public sportActivities: PredefinedSportActivity[];
 
   public fetch() {
     this.http
       .get('assets/data/predefined-activities.json')
       .subscribe((response: {food: PredefinedFoodJSON[], sport: PredefinedSportJSON[]}) => {
-        this._foodActivities = response.food.map(item => new PredefinedFoodActivity(item));
-        this._sportActivities = response.sport.map(item => new PredefinedSportActivity(item));
+        this.foodActivities = response.food.map(item => new PredefinedFoodActivity(item));
+        this.sportActivities = response.sport.map(item => new PredefinedSportActivity(item));
       });
   }
 }
