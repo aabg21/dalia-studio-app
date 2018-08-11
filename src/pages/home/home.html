@@ -14,17 +14,19 @@
   </ion-fab>
 
   <ion-list>
-    <ion-item-group *ngFor="let day of activities; let isToday = first;">
+    <ion-item-group *ngFor="let day of activities; first as isToday;">
       <ion-item-divider color="light">
         {{ day.dateFormatted }}
         <ion-badge *ngIf="isToday">היום</ion-badge>
       </ion-item-divider>
 
-      <ion-item *ngFor="let action of day.actions">
+      <div *ngFor="let action of day.actions">
+      <ion-item>
         <ion-icon name="alert" item-start></ion-icon>
         <h2>עוד לא הוספת כל פעילות</h2>
         <p>זה עוד לא מאוחר - קדימה!</p>
       </ion-item>
+      </div>
 
       <ion-item-sliding *ngFor="let activity of day.activities">
         <ion-item>

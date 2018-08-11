@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {IonicPage, NavController} from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {Content, FabContainer, IonicPage, List, NavController} from 'ionic-angular';
 import {ListPage} from '../list/list';
 import {ListGeneratorProvider, Response} from '../../providers/list-generator/list-generator';
 
@@ -9,7 +9,11 @@ import {ListGeneratorProvider, Response} from '../../providers/list-generator/li
   templateUrl: 'home.html',
 })
 export class HomePage {
-  public activities: Response[] = [];
+  @ViewChild(Content) content: Content;
+  @ViewChild(List) list: List;
+  @ViewChild(FabContainer) fab: FabContainer;
+
+  public activities: Response[];
   private dateStartFetching: Date;
 
   constructor(
@@ -31,6 +35,11 @@ export class HomePage {
 
   public ionViewWillEnter() {
     this.dateStartFetching = new Date();
+    this.activities = [];
+
+    this.content.scrollToTop();
+    this.list.closeSlidingItems();
+    this.fab.close();
     this.fetchActivities();
   }
 

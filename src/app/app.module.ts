@@ -17,6 +17,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SettingsProvider } from '../providers/settings/settings';
 import {locale} from 'moment';
 import { ListGeneratorProvider } from '../providers/list-generator/list-generator';
+import { ActionsGeneratorProvider } from '../providers/actions-generator/actions-generator';
 
 locale('he');
 
@@ -50,7 +51,8 @@ locale('he');
     ActivityStorageProvider,
     PredefinedActivityProvider,
     SettingsProvider,
-    ListGeneratorProvider
+    ListGeneratorProvider,
+    ActionsGeneratorProvider
   ]
 })
 export class AppModule {}

@@ -3,6 +3,7 @@ import {SettingsProvider} from '../settings/settings';
 import {ActivityStorageProvider} from '../activity/activity-storage-provider';
 import {Activity} from '../activity/activity';
 import * as moment from 'moment';
+import {ActionsGeneratorProvider} from '../actions-generator/actions-generator';
 
 export interface Response {
   dateFormatted: string;
@@ -14,9 +15,10 @@ export interface Response {
 export class ListGeneratorProvider {
   constructor(
     private settings: SettingsProvider,
-    private activityStorage: ActivityStorageProvider
+    private activityStorage: ActivityStorageProvider,
+    private actionsGenerator: ActionsGeneratorProvider
   ) {}
-  private THRESHOLD = 14;
+  private THRESHOLD = 7;
 
   private resetDate(date: Date): Date {
     date.setHours(0);
@@ -36,7 +38,7 @@ export class ListGeneratorProvider {
 
     return this.activityStorage
       .getActivities()
-      .then(activities => {
+      .then(allActivities => {
         const responses: Response[] = [];
         let prevDate = new Date(from);
 
@@ -47,13 +49,16 @@ export class ListGeneratorProvider {
             break;
           }
 
-          // activities
-          // actions
+          const activities = allActivities.filter((activity: Activity) => {
+            return activity.time >= from && activity.time < prevDate;
+          });
+
+          const actions = this.actionsGenerator.actionsByActivities(activities, from, prevDate);
 
           responses.push({
             dateFormatted: moment(from).format('dddd, D MMMM'),
-            actions: [],
-            activities: [],
+            actions,
+            activities,
           });
 
           prevDate = new Date(from);

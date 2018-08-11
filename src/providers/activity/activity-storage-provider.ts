@@ -5,9 +5,9 @@ import {Activity} from './activity';
 @Injectable()
 export class ActivityStorageProvider {
   private activities: Activity[];
-  private promise: Promise<Activity[]>;
+  private readonly promise: Promise<Activity[]>;
 
-  private KEY = 'activities';
+  private readonly KEY = 'activities';
 
   constructor (private storage: Storage) {
     this.promise = this.storage
