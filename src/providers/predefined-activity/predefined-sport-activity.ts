@@ -14,7 +14,7 @@ export class PredefinedSportActivity extends SportActivity {
   public avgPulse: string;
 
   constructor({name, duration, calories, pulse}: PredefinedSportJSON) {
-    super(name, null, PREDEFINED_ITEM_DATE, calories);
+    super(name, null, PREDEFINED_ITEM_DATE, calories, '');
 
     this.recommendedDuration = duration;
     this.avgPulse = pulse;
