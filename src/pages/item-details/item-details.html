@@ -55,11 +55,11 @@
         min="0">
       </ion-input>
     </ion-item>
-    <ion-item *ngIf="type === 'FOOD'">
-      <ion-note>גודל מנה: {{activity.portionSize}}</ion-note>
-    </ion-item>
-    <ion-item *ngIf="type === 'FOOD' && activity.recommendedSize">
-      <ion-note>כמות מומלצת: {{activity.recommendedSize}}</ion-note>
+    <ion-item *ngIf="type === 'FOOD' && activity.portionSize">
+      <ion-note>
+        גודל מנה:
+        <strong>{{activity.portionSize}}</strong>
+      </ion-note>
     </ion-item>
     <ion-item *ngIf="type === 'FOOD'">
       <ion-label>מספר מנות</ion-label>
@@ -75,6 +75,14 @@
       <ion-input
         type="number"
         [(ngModel)]="model.calories"
+        min="0">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>הערות</ion-label>
+      <ion-input
+        type="text"
+        [(ngModel)]="model.notes"
         min="0">
       </ion-input>
     </ion-item>

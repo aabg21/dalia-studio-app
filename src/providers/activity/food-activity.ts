@@ -13,7 +13,8 @@ export class FoodActivity extends Activity {
     public category: FoodCategoryEnum,
     public time: Date,
     public amount: number,
-    public calories: number
+    public calories: number,
+    public notes: string
   ) {
     super();
   }

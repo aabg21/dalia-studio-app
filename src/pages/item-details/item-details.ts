@@ -33,12 +33,12 @@ export class ItemDetailsPage {
 
     if (isSportActivity(activity)) {
       this.activity = <PredefinedSportActivity>activity;
-      this.model = new SportActivity(activity.name, null, new Date(), null);
+      this.model = new SportActivity(activity.name, null, new Date(), null, '');
       this.title = activity.name;
       this.type = 'SPORT';
     } else if (isFoodActivity(activity)) {
       this.activity = <PredefinedFoodActivity>activity;
-      this.model = new FoodActivity(activity.item, activity.category, new Date(), null, null);
+      this.model = new FoodActivity(activity.item, activity.category, new Date(), 1, activity.calories, '');
       this.title = activity.item;
       this.type = 'FOOD';
     }

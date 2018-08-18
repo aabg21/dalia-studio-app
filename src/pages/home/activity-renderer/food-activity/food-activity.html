@@ -3,6 +3,7 @@
     <ion-icon name="cafe" item-start></ion-icon>
     <h2>{{ activity.item }}</h2>
     <p>בשעה {{ activity.time | date: 'HH:mm' }}</p>
+    <p *ngIf="activity.notes">{{ activity.notes }}</p>
     <ion-note item-end>{{ activity.calories | number }} קל׳</ion-note>
   </ion-item>
   <ion-item-options side="left">

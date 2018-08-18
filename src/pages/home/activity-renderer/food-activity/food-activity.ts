@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {FoodActivity} from '../../../../providers/activity/food-activity';
 import {ItemDetailsPage} from '../../../item-details/item-details';
-import {AlertController, ModalController, NavController} from 'ionic-angular';
+import {AlertController, ModalController} from 'ionic-angular';
 import {ActivityStorageProvider} from '../../../../providers/activity/activity-storage-provider';
 
 @Component({

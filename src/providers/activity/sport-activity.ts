@@ -11,7 +11,8 @@ export class SportActivity extends Activity {
     public name: string,
     public duration: number,
     public time: Date,
-    public calories: number
+    public calories: number,
+    public notes: string
   ) {
     super();
   }
