@@ -15,6 +15,8 @@ import {ActivityStorageProvider} from '../../providers/activity/activity-storage
 })
 export class ItemDetailsPage {
   private activity: PredefinedSportActivity|PredefinedFoodActivity;
+  private isEdit: boolean;
+
   public model: SportActivity|FoodActivity;
   public title: string;
   public type: string;
@@ -27,6 +29,8 @@ export class ItemDetailsPage {
   ) {
     const activity: Activity = navParams.get('activity');
 
+    this.isEdit = navParams.get('isEdit');
+
     if (isSportActivity(activity)) {
       this.activity = <PredefinedSportActivity>activity;
       this.model = new SportActivity(activity.name, null, new Date(), null);
@@ -38,6 +42,8 @@ export class ItemDetailsPage {
       this.title = activity.item;
       this.type = 'FOOD';
     }
+
+    Object.assign(this.model, activity);
 
     this.isoDate = new Date(this.model.time.getTime() - (this.model.time.getTimezoneOffset() * 60000)).toISOString();
   }
@@ -72,7 +78,9 @@ export class ItemDetailsPage {
   }
 
   public save() {
-    this.model.time = new Date(this.isoDate);
+    const isoDate = new Date(this.isoDate);
+
+    this.model.time = new Date(isoDate.getTime() + (isoDate.getTimezoneOffset() * 60000));
 
     if (isSportActivity(this.model) && typeof this.model.duration !== 'number') {
       this.model.duration = parseInt('' + this.model.duration, 10);
@@ -84,7 +92,13 @@ export class ItemDetailsPage {
       this.model.calories = parseInt('' + this.model.calories, 10);
     }
 
-    this.activityStorage.addActivities(this.model);
+    if (this.isEdit) {
+      Object.assign(this.activity, this.model);
+      this.activityStorage.save();
+    } else {
+      this.activityStorage.addActivities(this.model);
+    }
+
     this.viewCtrl.dismiss(true);
   }
 

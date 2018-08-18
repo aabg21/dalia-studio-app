@@ -1,0 +1,16 @@
+<ion-item-sliding [style.height]="deleted ? 0 : 'auto'">
+  <ion-item>
+    <ion-icon name="cafe" item-start></ion-icon>
+    <h2>{{ activity.item }}</h2>
+    <p>בשעה {{ activity.time | date: 'HH:mm' }}</p>
+    <ion-note item-end>{{ activity.calories | number }} קל׳</ion-note>
+  </ion-item>
+  <ion-item-options side="left">
+    <button ion-button color="primary" (click)="edit()">
+      עריכה
+    </button>
+    <button ion-button color="danger" (click)="delete()">
+      מחיקה
+    </button>
+  </ion-item-options>
+</ion-item-sliding>

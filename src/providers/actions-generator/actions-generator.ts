@@ -58,7 +58,11 @@ export class ActionsGeneratorProvider {
     if (startDay.getDay() === this.settings.sprintStartDay) {
       const hasWeight = activity.some(activity => isWeightActivity(activity));
 
-      this._actions.push(hasWeight ? Actions.INSIGHTS_AVAILABLE : Actions.WEIGHT_NEEDED);
+      if (hasWeight && +startDay > this.settings.accountCreatedTimestamp) {
+        this._actions.push(Actions.INSIGHTS_AVAILABLE);
+      } else {
+        this._actions.push(Actions.WEIGHT_NEEDED);
+      }
     }
   }
 }

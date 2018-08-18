@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {Content, FabContainer, IonicPage, List, NavController} from 'ionic-angular';
 import {ListPage} from '../list/list';
 import {ListGeneratorProvider, Response} from '../../providers/list-generator/list-generator';
+import {CaloriesBankProvider} from '../../providers/calories-bank/calories-bank';
 
 @IonicPage()
 @Component({
@@ -14,11 +15,13 @@ export class HomePage {
   @ViewChild(FabContainer) fab: FabContainer;
 
   public activities: Response[];
+  public caloriesBankPts: number;
   private dateStartFetching: Date;
 
   constructor(
     private navCtrl: NavController,
     private listGenerator: ListGeneratorProvider,
+    private caloriesBank: CaloriesBankProvider
   ) {}
 
   public goToSportList() {
@@ -36,6 +39,10 @@ export class HomePage {
   public ionViewWillEnter() {
     this.dateStartFetching = new Date();
     this.activities = [];
+
+    this.caloriesBank
+      .getQuota(this.dateStartFetching)
+      .then(pts => this.caloriesBankPts = pts);
 
     this.content.scrollToTop();
     this.list.closeSlidingItems();

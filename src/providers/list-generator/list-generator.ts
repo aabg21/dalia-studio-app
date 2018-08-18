@@ -7,6 +7,7 @@ import {ActionsGeneratorProvider} from '../actions-generator/actions-generator';
 
 export interface Response {
   dateFormatted: string;
+  date: Date;
   actions: any[];
   activities: Activity[];
 }
@@ -57,6 +58,7 @@ export class ListGeneratorProvider {
 
           responses.push({
             dateFormatted: moment(from).format('dddd, D MMMM'),
+            date: new Date(from),
             actions,
             activities,
           });

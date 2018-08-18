@@ -1,23 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {ErrorHandler, NgModule} from '@angular/core';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
+import {MyApp} from './app.component';
 
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+import {ItemDetailsPage} from '../pages/item-details/item-details';
+import {ListPage} from '../pages/list/list';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import {StatusBar} from '@ionic-native/status-bar';
+import {SplashScreen} from '@ionic-native/splash-screen';
 import {HomePageModule} from '../pages/home/home.module';
 import {HomePage} from '../pages/home/home';
-import { ActivityStorageProvider } from '../providers/activity/activity-storage-provider';
+import {ActivityStorageProvider} from '../providers/activity/activity-storage-provider';
 import {IonicStorageModule} from '@ionic/storage';
-import { PredefinedActivityProvider } from '../providers/predefined-activity/predefined-activity';
+import {PredefinedActivityProvider} from '../providers/predefined-activity/predefined-activity';
 import {HttpClientModule} from '@angular/common/http';
-import { SettingsProvider } from '../providers/settings/settings';
+import {SettingsProvider} from '../providers/settings/settings';
 import {locale} from 'moment';
-import { ListGeneratorProvider } from '../providers/list-generator/list-generator';
-import { ActionsGeneratorProvider } from '../providers/actions-generator/actions-generator';
+import {ListGeneratorProvider} from '../providers/list-generator/list-generator';
+import {ActionsGeneratorProvider} from '../providers/actions-generator/actions-generator';
+import {CaloriesBankProvider} from '../providers/calories-bank/calories-bank';
 
 locale('he');
 
@@ -52,7 +53,8 @@ locale('he');
     PredefinedActivityProvider,
     SettingsProvider,
     ListGeneratorProvider,
-    ActionsGeneratorProvider
+    ActionsGeneratorProvider,
+    CaloriesBankProvider,
   ]
 })
 export class AppModule {}
