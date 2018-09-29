@@ -8,6 +8,7 @@ import {isSportActivity} from '../activity/sport-activity';
 
 @Injectable()
 export class CaloriesBankProvider {
+  static COEFFICIENT = 26 * 7;
 
   constructor(
     private activityStorage: ActivityStorageProvider,
@@ -78,6 +79,6 @@ export class CaloriesBankProvider {
           sportActivities = activities.filter(isSportActivity),
           calSport = sportActivities.reduce((cal, food) => cal + food.calories, 0);
 
-    return weight.weight + calSport - calFood;
+    return (weight.weight * CaloriesBankProvider.COEFFICIENT) + calSport - calFood;
   }
 }

@@ -63,7 +63,7 @@ export class ItemDetailsPage {
   }
 
   private isValidNumber(number: string|number) {
-    number = parseInt('' + number, 10);
+    number = parseFloat('' + number);
     return !!number && !isNaN(number);
   }
 
@@ -83,9 +83,9 @@ export class ItemDetailsPage {
     this.model.time = new Date(isoDate.getTime() + (isoDate.getTimezoneOffset() * 60000));
 
     if (isSportActivity(this.model) && typeof this.model.duration !== 'number') {
-      this.model.duration = parseInt('' + this.model.duration, 10);
+      this.model.duration = parseFloat('' + this.model.duration);
     } else if (isFoodActivity(this.model) && typeof this.model.amount !== 'number') {
-      this.model.amount = parseInt('' + this.model.amount, 10);
+      this.model.amount = parseFloat('' + this.model.amount);
     }
 
     if (typeof this.model.calories !== 'number') {
