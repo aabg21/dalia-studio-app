@@ -21,7 +21,7 @@ export const FOOD_CATEGORY_ORDER = [
   FoodCategoryEnum.BONUS,
 ];
 
-export const FOOD_CATREGORY_NAMES: {[category: number]: string} = {
+export const FOOD_CATEGORY_NAMES: {[category: number]: string} = {
   [FoodCategoryEnum.PROTEIN]: 'חלבון',
   [FoodCategoryEnum.CARBS]: 'פחמימות',
   [FoodCategoryEnum.VEGETABLES]: 'ירקות',

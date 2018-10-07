@@ -19,6 +19,7 @@ import {locale} from 'moment';
 import {ListGeneratorProvider} from '../providers/list-generator/list-generator';
 import {ActionsGeneratorProvider} from '../providers/actions-generator/actions-generator';
 import {CaloriesBankProvider} from '../providers/calories-bank/calories-bank';
+import {AppPreferences} from "@ionic-native/app-preferences";
 
 locale('he');
 
@@ -50,6 +51,7 @@ locale('he');
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ActivityStorageProvider,
+    AppPreferences,
     PredefinedActivityProvider,
     SettingsProvider,
     ListGeneratorProvider,

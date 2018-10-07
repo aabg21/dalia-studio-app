@@ -7,12 +7,15 @@ import { groupBy } from 'lodash';
 import { ItemDetailsPage } from '../item-details/item-details';
 import {Activity} from '../../providers/activity/activity';
 import {PredefinedActivityProvider} from '../../providers/predefined-activity/predefined-activity';
-import {FOOD_CATEGORY_ORDER, FOOD_CATREGORY_NAMES} from '../../providers/activity/food-category-enum';
+import {FOOD_CATEGORY_ORDER, FOOD_CATEGORY_NAMES} from '../../providers/activity/food-category-enum';
+import {ActivityStorageProvider} from "../../providers/activity/activity-storage-provider";
+import {isFoodActivity} from "../../providers/activity/food-activity";
 
 interface Item {
   title: string;
   note: string;
   activity: Activity;
+  isRecent: boolean;
 }
 
 interface CategoryItem {
@@ -33,7 +36,8 @@ export class ListPage {
     private modalCtrl: ModalController,
     private navCtrl: NavController,
     navParams: NavParams,
-    predefinedActivities: PredefinedActivityProvider
+    predefinedActivities: PredefinedActivityProvider,
+    private activityStorage: ActivityStorageProvider
   ) {
     const isFood = navParams.get('type') === 'FOOD';
 
@@ -41,13 +45,14 @@ export class ListPage {
       this.allItems = predefinedActivities.foodActivities.map(food => (<Item>{
         activity: food,
         title: food.item,
-        note: food.portionSize
+        note: food.portionSize,
+        isRecent: false,
       }));
 
       const grouped = groupBy(this.allItems, 'activity.category');
 
       this.categoryItems = FOOD_CATEGORY_ORDER.map(category => (<CategoryItem>{
-        category: FOOD_CATREGORY_NAMES[category],
+        category: FOOD_CATEGORY_NAMES[category],
         items: grouped[category]
       }));
 
@@ -55,9 +60,32 @@ export class ListPage {
       this.items = this.allItems = predefinedActivities.sportActivities.map(sport => (<Item>{
         activity: sport,
         title: sport.name,
-        note: sport.calories? `${sport.calories} קלוריות ` : ''
+        note: sport.calories? `${sport.calories} קלוריות ` : '',
+        isRecent: false,
       }));
     }
+  }
+
+  private addRecentFood() {
+    this.activityStorage.getActivities().then(activities => {
+      const recent: Item[] = activities
+        .filter(isFoodActivity)
+        .slice(-5)
+        .reverse()
+        .map(food => ({
+          activity: food,
+          title: food.item,
+          note: food.portionSize,
+          isRecent: true,
+        }));
+
+      if (recent.length > 0) {
+        this.categoryItems = [{
+          category: 'אחרונים',
+          items: recent
+        }, ...this.categoryItems];
+      }
+    });
   }
 
   filterItems(evnt: UIEvent) {

@@ -33,6 +33,18 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
       this.predefinedActivities.fetch();
+
+      let timestampPaused: Date;
+
+      this.platform.pause.subscribe(() => {
+        timestampPaused = new Date();
+      });
+
+      this.platform.resume.subscribe(() => {
+        if (timestampPaused && new Date().getDate() !== timestampPaused.getDate()) {
+          this.openPage(this.rootPage);
+        }
+      });
     });
   }
 

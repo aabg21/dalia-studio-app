@@ -14,13 +14,15 @@ import {ActivityStorageProvider} from '../../providers/activity/activity-storage
   templateUrl: 'item-details.html'
 })
 export class ItemDetailsPage {
-  private activity: PredefinedSportActivity|PredefinedFoodActivity;
-  private isEdit: boolean;
+  private readonly activity: PredefinedSportActivity|PredefinedFoodActivity;
+  private readonly isEdit: boolean;
+  private readonly isRecent: boolean;
+  private readonly activityCalories: number;
 
-  public model: SportActivity|FoodActivity;
-  public title: string;
-  public type: string;
-  public isoDate: string;
+  public readonly model: SportActivity|FoodActivity;
+  public readonly title: string;
+  public readonly type: string;
+  public readonly isoDate: string;
 
   constructor(
     private viewCtrl: ViewController,
@@ -30,20 +32,32 @@ export class ItemDetailsPage {
     const activity: Activity = navParams.get('activity');
 
     this.isEdit = navParams.get('isEdit');
+    this.isRecent = navParams.get('isRecent');
 
     if (isSportActivity(activity)) {
-      this.activity = <PredefinedSportActivity>activity;
-      this.model = new SportActivity(activity.name, null, new Date(), null, '');
-      this.title = activity.name;
       this.type = 'SPORT';
+      this.activity = <PredefinedSportActivity>activity;
+      this.model = new SportActivity();
+      this.title = activity.name;
+      this.activityCalories = (this.isEdit || this.isRecent) ?
+        60 * activity.calories / activity.duration :
+        activity.calories;
+
     } else if (isFoodActivity(activity)) {
-      this.activity = <PredefinedFoodActivity>activity;
-      this.model = new FoodActivity(activity.item, activity.category, new Date(), 1, activity.calories, '');
-      this.title = activity.item;
       this.type = 'FOOD';
+      this.activity = <PredefinedFoodActivity>activity;
+      this.model = new FoodActivity();
+      this.title = activity.item;
+      this.activityCalories = (this.isEdit || this.isRecent) ?
+        activity.calories / activity.amount :
+        activity.calories;
     }
 
     Object.assign(this.model, activity);
+
+    if (!this.isEdit) {
+      this.model.time = new Date();
+    }
 
     this.isoDate = new Date(this.model.time.getTime() - (this.model.time.getTimezoneOffset() * 60000)).toISOString();
   }
@@ -57,8 +71,8 @@ export class ItemDetailsPage {
   }
 
   public setCalories(event: UIEvent) {
-    if (this.activity.calories) {
-      this.model.calories = Math.round(this.activity.calories * this.getMultiply());
+    if (this.activityCalories) {
+      this.model.calories = Math.round(this.activityCalories * this.getMultiply());
     }
   }
 
