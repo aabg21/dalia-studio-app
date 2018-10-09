@@ -56,6 +56,8 @@ export class ListPage {
         items: grouped[category]
       }));
 
+      this.addRecentFood();
+
     } else {
       this.items = this.allItems = predefinedActivities.sportActivities.map(sport => (<Item>{
         activity: sport,

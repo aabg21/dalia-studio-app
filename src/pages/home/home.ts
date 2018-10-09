@@ -1,8 +1,11 @@
 import {Component, ViewChild} from '@angular/core';
-import {Content, FabContainer, IonicPage, List, NavController} from 'ionic-angular';
+import {Content, FabContainer, IonicPage, List, NavController, PopoverController} from 'ionic-angular';
 import {ListPage} from '../list/list';
 import {ListGeneratorProvider, Response} from '../../providers/list-generator/list-generator';
 import {CaloriesBankProvider} from '../../providers/calories-bank/calories-bank';
+import {HelpCaloriesBankPage} from "../help-calories-bank/help-calories-bank";
+
+const caloriesForecastCoefficient = - 1 / 7700;
 
 @IonicPage()
 @Component({
@@ -16,12 +19,14 @@ export class HomePage {
 
   public activities: Response[];
   public caloriesBankPts: number;
+  public caloriesForecast: number;
   private dateStartFetching: Date;
 
   constructor(
     private navCtrl: NavController,
     private listGenerator: ListGeneratorProvider,
-    private caloriesBank: CaloriesBankProvider
+    private caloriesBank: CaloriesBankProvider,
+    private popoverCtrl: PopoverController
   ) {}
 
   public goToSportList() {
@@ -36,13 +41,22 @@ export class HomePage {
     });
   }
 
+  public showCaloriesBankHelpText(ev) {
+    this.popoverCtrl
+      .create(HelpCaloriesBankPage)
+      .present({ ev });
+  }
+
   public ionViewWillEnter() {
     this.dateStartFetching = new Date();
     this.activities = [];
 
     this.caloriesBank
       .getQuota(this.dateStartFetching)
-      .then(pts => this.caloriesBankPts = pts);
+      .then(pts => {
+        this.caloriesBankPts = pts;
+        this.caloriesForecast = caloriesForecastCoefficient * pts;
+      });
 
     this.content.scrollToTop();
     this.list.closeSlidingItems();

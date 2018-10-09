@@ -20,6 +20,7 @@ import {ListGeneratorProvider} from '../providers/list-generator/list-generator'
 import {ActionsGeneratorProvider} from '../providers/actions-generator/actions-generator';
 import {CaloriesBankProvider} from '../providers/calories-bank/calories-bank';
 import {AppPreferences} from "@ionic-native/app-preferences";
+import {HelpCaloriesBankPageModule} from "../pages/help-calories-bank/help-calories-bank.module";
 
 locale('he');
 
@@ -27,7 +28,7 @@ locale('he');
   declarations: [
     MyApp,
     ItemDetailsPage,
-    ListPage
+    ListPage,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,8 @@ locale('he');
       name: '__daliadb',
       driverOrder: ['indexeddb', 'sqlite', 'websql']
     }),
-    HomePageModule
+    HomePageModule,
+    HelpCaloriesBankPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

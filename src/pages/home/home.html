@@ -35,8 +35,9 @@
 <ion-footer>
   <ion-toolbar start color="light" *ngIf="caloriesBankPts">
     <p>בנק קלוריות שבועי: {{ caloriesBankPts | number }}</p>
+    <p>תחזית שינוי משקל: {{ caloriesForecast | number:'1.0-1' }} גרם</p>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="showCaloriesBankHelpText($event)">
         <ion-icon name="help"></ion-icon>
       </button>
     </ion-buttons>

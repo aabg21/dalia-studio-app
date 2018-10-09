@@ -1,4 +1,4 @@
 export abstract class Activity {
   protected abstract type: string;
-  protected abstract time: Date;
+  public abstract time: Date;
 }
