@@ -20,6 +20,7 @@
         <ion-badge *ngIf="isToday">היום</ion-badge>
       </ion-item-divider>
 
+      <totalRenderer [activities]="day.activities"></totalRenderer>
       <actionRenderer *ngFor="let action of day.actions" [action]="action" [date]="day.date"></actionRenderer>
       <activityRenderer *ngFor="let activity of day.activities" [activity]="activity"></activityRenderer>
     </ion-item-group>

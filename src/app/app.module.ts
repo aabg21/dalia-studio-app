@@ -21,6 +21,7 @@ import {ActionsGeneratorProvider} from '../providers/actions-generator/actions-g
 import {CaloriesBankProvider} from '../providers/calories-bank/calories-bank';
 import {AppPreferences} from "@ionic-native/app-preferences";
 import {HelpCaloriesBankPageModule} from "../pages/help-calories-bank/help-calories-bank.module";
+import {ComponentsModule} from "../components/components.module";
 
 locale('he');
 
@@ -39,7 +40,8 @@ locale('he');
       driverOrder: ['indexeddb', 'sqlite', 'websql']
     }),
     HomePageModule,
-    HelpCaloriesBankPageModule
+    HelpCaloriesBankPageModule,
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

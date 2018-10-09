@@ -9,6 +9,8 @@ import {ActivityRendererComponent} from './activity-renderer/activity-renderer';
 import {FoodActivityComponent} from './activity-renderer/food-activity/food-activity';
 import {SportActivityComponent} from './activity-renderer/sport-activity/sport-activity';
 import {WeightActivityComponent} from './activity-renderer/weight-activity/weight-activity';
+import {TotalRendererComponent} from "./total-renderer/total-renderer";
+import {ComponentsModule} from "../../components/components.module";
 
 @NgModule({
   declarations: [
@@ -21,9 +23,11 @@ import {WeightActivityComponent} from './activity-renderer/weight-activity/weigh
     FoodActivityComponent,
     SportActivityComponent,
     WeightActivityComponent,
+    TotalRendererComponent
   ],
   imports: [
     IonicPageModule.forChild(HomePage),
+    ComponentsModule
   ],
   exports: [
     HomePage

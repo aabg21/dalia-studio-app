@@ -1,0 +1,10 @@
+expandable {
+  .wrapper {
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+  }
+
+  .collapsed {
+    height: 0 !important;
+  }
+}
