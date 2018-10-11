@@ -17,6 +17,23 @@
 </ion-header>
 
 <ion-content>
+  <ion-list *ngIf="type === 'FOOD' && !activity">
+    <ion-item>
+      <ion-label>שם מאכל</ion-label>
+      <ion-input type="text" [(ngModel)]="model.item"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>קטגוריית מזון</ion-label>
+      <ion-select [(ngModel)]="model.category" okText="אישור" cancelText="ביטול">
+        <ion-option
+          *ngFor="let category of foodCategories"
+          [value]="category.value">
+          {{ category.displayText }}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
   <ion-list>
     <ion-list-header>תאריך ושעה</ion-list-header>
     <ion-item>
@@ -55,18 +72,22 @@
         min="0">
       </ion-input>
     </ion-item>
-    <ion-item *ngIf="type === 'FOOD' && activity.portionSize">
+    <ion-item *ngIf="type === 'FOOD' && activity?.portionSize">
       <ion-note>
         גודל מנה:
         <strong>{{activity.portionSize}}</strong>
       </ion-note>
+    </ion-item>
+    <ion-item *ngIf="type === 'FOOD' && !activity">
+      <ion-label>גודל מנה</ion-label>
+      <ion-input type="text" [(ngModel)]="model.portionSize"></ion-input>
     </ion-item>
     <ion-item *ngIf="type === 'FOOD'">
       <ion-label>מספר מנות</ion-label>
       <ion-input
         type="number"
         [(ngModel)]="model.amount"
-        (input)="setCalories($event)"
+        (input)="setCalories()"
         min="0">
       </ion-input>
     </ion-item>

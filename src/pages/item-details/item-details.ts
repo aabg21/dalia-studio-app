@@ -7,6 +7,7 @@ import {FoodActivity, isFoodActivity} from '../../providers/activity/food-activi
 import {PredefinedSportActivity} from '../../providers/predefined-activity/predefined-sport-activity';
 import {PredefinedFoodActivity} from '../../providers/predefined-activity/predefined-food-activity';
 import {ActivityStorageProvider} from '../../providers/activity/activity-storage-provider';
+import {FOOD_CATEGORY_NAMES, FOOD_CATEGORY_ORDER} from "../../providers/activity/food-category-enum";
 
 
 @Component({
@@ -24,17 +25,21 @@ export class ItemDetailsPage {
   public readonly type: string;
   public readonly isoDate: string;
 
+  public readonly foodCategories = FOOD_CATEGORY_ORDER.map(cat => ({
+    value: cat,
+    displayText: FOOD_CATEGORY_NAMES[cat]
+  }));
+
   constructor(
     private viewCtrl: ViewController,
     navParams: NavParams,
     private activityStorage: ActivityStorageProvider
   ) {
     const activity: Activity = navParams.get('activity');
-
     this.isEdit = navParams.get('isEdit');
     this.isRecent = navParams.get('isRecent');
 
-    if (isSportActivity(activity)) {
+    if (activity && isSportActivity(activity)) {
       this.type = 'SPORT';
       this.activity = <PredefinedSportActivity>activity;
       this.model = new SportActivity();
@@ -43,17 +48,24 @@ export class ItemDetailsPage {
         60 * activity.calories / activity.duration :
         activity.calories;
 
-    } else if (isFoodActivity(activity)) {
+    } else {
       this.type = 'FOOD';
-      this.activity = <PredefinedFoodActivity>activity;
       this.model = new FoodActivity();
-      this.title = activity.item;
-      this.activityCalories = (this.isEdit || this.isRecent) ?
-        activity.calories / activity.amount :
-        activity.calories;
+
+      if (activity && isFoodActivity(activity)) {
+        this.activity = <PredefinedFoodActivity>activity;
+        this.title = activity.item;
+        this.activityCalories = (this.isEdit || this.isRecent) ?
+          activity.calories / activity.amount :
+          activity.calories;
+      } else {
+        this.title = 'מאכל אחר';
+      }
     }
 
-    Object.assign(this.model, activity);
+    if (activity) {
+      Object.assign(this.model, activity);
+    }
 
     if (!this.isEdit) {
       this.model.time = new Date();
@@ -70,7 +82,7 @@ export class ItemDetailsPage {
     }
   }
 
-  public setCalories(event: UIEvent) {
+  public setCalories() {
     if (this.activityCalories) {
       this.model.calories = Math.round(this.activityCalories * this.getMultiply());
     }
@@ -84,8 +96,10 @@ export class ItemDetailsPage {
   public isInvalid() {
     if (isSportActivity(this.model) && !this.isValidNumber(this.model.duration)) {
       return true;
-    } else if (isFoodActivity(this.model) && !this.isValidNumber(this.model.amount)) {
-      return true;
+    } else if (isFoodActivity(this.model)) {
+      if (!this.isValidNumber(this.model.amount)) return true;
+      if (!this.model.item) return true;
+      if (typeof this.model.category !== 'number') return true;
     }
 
     return !this.isValidNumber(this.model.calories);

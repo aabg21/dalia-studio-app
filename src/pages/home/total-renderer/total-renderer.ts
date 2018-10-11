@@ -9,8 +9,8 @@ import {isSportActivity} from "../../../providers/activity/sport-activity";
   template: `
     <ion-item>
       <ion-icon name="ios-arrow-forward" item-start></ion-icon>
-      <h2>סה״כ יומי</h2>
-      <button ion-button clear item-end (click)="shown = !shown">{{ shown ? 'הסתר' : 'הצג' }}</button>
+      <h2>סיכום יומי</h2>
+      <button ion-button clear item-end style="width: 50px;" (click)="shown = !shown">{{ shown ? 'הסתר' : 'הצג' }}</button>
       <expandable [expanded]="shown" [expandedHeight]="150">
         <ion-list item-content>
           <ion-item>

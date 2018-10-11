@@ -101,7 +101,7 @@ export class ListPage {
     }
   }
 
-  itemTapped(item: Item) {
+  itemTapped(item?: Item) {
     const modal = this.modalCtrl.create(ItemDetailsPage, item);
 
     modal.onDidDismiss((result: boolean) => {
