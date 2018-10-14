@@ -34,7 +34,9 @@ locale('he');
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'חזרה',
+    }),
     IonicStorageModule.forRoot({
       name: '__daliadb',
       driverOrder: ['indexeddb', 'sqlite', 'websql']

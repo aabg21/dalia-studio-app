@@ -8,7 +8,7 @@ import {Actions} from '../../../providers/actions-generator/actions-generator';
     <ng-container [ngSwitch]="actionType">
       <emptyMealAction *ngSwitchCase="'empty_meal'" [action]="_action"></emptyMealAction>
       <insightsAvailableAction *ngSwitchCase="'insights'"></insightsAvailableAction>
-      <enterWeightAction *ngSwitchCase="'weight'" [date]="date"></enterWeightAction>
+      <weightActivity *ngSwitchCase="'weight'" [date]="date"></weightActivity>
     </ng-container>
   `
 })

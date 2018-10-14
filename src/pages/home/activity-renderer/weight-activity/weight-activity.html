@@ -1,12 +1,21 @@
-<ion-item-sliding>
-  <ion-item>
+<ng-container [ngSwitch]="isEdit">
+  <ion-item-sliding *ngSwitchCase="true">
+    <ion-item>
+      <ion-icon name="clipboard" item-start></ion-icon>
+      <h2>משקל התחלה</h2>
+      <p>{{ activity.weight | number }} ק״ג</p>
+    </ion-item>
+    <ion-item-options side="left">
+      <button ion-button color="primary" (click)="openDialog()">
+        תיקון
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item *ngSwitchCase="false">
     <ion-icon name="clipboard" item-start></ion-icon>
     <h2>משקל התחלה</h2>
-    <p>{{ activity.weight | number }} ק״ג</p>
+    <p>טרם עדכנת משקל לשבוע זה</p>
+    <button ion-button clear item-end (click)="openDialog()">עדכון</button>
   </ion-item>
-  <ion-item-options side="left">
-    <button ion-button color="primary" (click)="amend()">
-      תיקון
-    </button>
-  </ion-item-options>
-</ion-item-sliding>
+</ng-container>
