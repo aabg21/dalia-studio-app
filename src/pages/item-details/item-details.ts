@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import {NavParams, ViewController} from 'ionic-angular';
+import {NavParams, ToastController, ViewController} from 'ionic-angular';
 import { Activity } from '../../providers/activity/activity';
 import {isSportActivity, SportActivity} from '../../providers/activity/sport-activity';
 import {FoodActivity, isFoodActivity} from '../../providers/activity/food-activity';
@@ -33,7 +33,8 @@ export class ItemDetailsPage {
   constructor(
     private viewCtrl: ViewController,
     navParams: NavParams,
-    private activityStorage: ActivityStorageProvider
+    private activityStorage: ActivityStorageProvider,
+    private toastCtrl: ToastController
   ) {
     const activity: Activity = navParams.get('activity');
     this.isEdit = navParams.get('isEdit');
@@ -123,8 +124,16 @@ export class ItemDetailsPage {
     if (this.isEdit) {
       Object.assign(this.activity, this.model);
       this.activityStorage.save();
+      this.toastCtrl.create({
+        message: 'פריט עודכן בהצלחה',
+        duration: 3000,
+      }).present();
     } else {
       this.activityStorage.addActivities(this.model);
+      this.toastCtrl.create({
+        message: 'פריט נוסף בהצלחה',
+        duration: 3000,
+      }).present();
     }
 
     this.viewCtrl.dismiss(true);

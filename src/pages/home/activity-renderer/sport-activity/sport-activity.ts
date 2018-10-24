@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {SportActivity} from '../../../../providers/activity/sport-activity';
-import {AlertController, ModalController} from 'ionic-angular';
+import {AlertController, ModalController, ToastController} from 'ionic-angular';
 import {ItemDetailsPage} from '../../../item-details/item-details';
 import {ActivityStorageProvider} from '../../../../providers/activity/activity-storage-provider';
 
@@ -17,7 +17,8 @@ export class SportActivityComponent {
   constructor (
     private modalCtrl: ModalController,
     private alertCtrl: AlertController,
-    private activityStorage: ActivityStorageProvider
+    private activityStorage: ActivityStorageProvider,
+    private toastCtrl: ToastController
   ) {}
 
   edit() {
@@ -40,6 +41,10 @@ export class SportActivityComponent {
             handler: () => {
               this.activityStorage.deleteActivity(this.activity);
               this.deleted = true;
+              this.toastCtrl.create({
+                message: 'הפריט נמחק בהצלחה',
+                duration: 3000,
+              }).present();
             }
           }
         ]

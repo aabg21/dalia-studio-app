@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {isWeightActivity, WeightActivity} from '../../../../providers/activity/weight-activity';
-import {AlertController, NavController} from 'ionic-angular';
+import {AlertController, NavController, ToastController} from 'ionic-angular';
 import {ActivityStorageProvider} from '../../../../providers/activity/activity-storage-provider';
 
 @Component({
@@ -18,7 +18,8 @@ export class WeightActivityComponent implements OnInit {
   constructor(
     private alertCtrl: AlertController,
     private activityStorage: ActivityStorageProvider,
-    private navCtrl: NavController
+    private navCtrl: NavController,
+    private toastCtrl: ToastController
   ) {}
 
   ngOnInit(): void {
@@ -70,8 +71,17 @@ export class WeightActivityComponent implements OnInit {
               if (this.isEdit) {
                 this.activity.weight = weight;
                 this.activityStorage.save();
+                this.toastCtrl.create({
+                  message: 'המשקל תוקן בהצלחה',
+                  duration: 3000,
+                }).present();
+
               } else {
                 this.activityStorage.addActivities(new WeightActivity(this.date, weight));
+                this.toastCtrl.create({
+                  message: 'המשקל עודכן בהצלחה. כעת ניתן לצפות בסיכום השבועי.',
+                  duration: 3000,
+                }).present();
               }
 
               this.navCtrl.goToRoot({});
