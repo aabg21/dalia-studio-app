@@ -22,6 +22,8 @@ import {CaloriesBankProvider} from '../providers/calories-bank/calories-bank';
 import {AppPreferences} from "@ionic-native/app-preferences";
 import {HelpCaloriesBankPageModule} from "../pages/help-calories-bank/help-calories-bank.module";
 import {ComponentsModule} from "../components/components.module";
+import {WeeklySummaryPageModule} from "../pages/weekly-summary/weekly-summary.module";
+import {WeeklySummaryPage} from "../pages/weekly-summary/weekly-summary";
 
 locale('he');
 
@@ -43,14 +45,16 @@ locale('he');
     }),
     HomePageModule,
     HelpCaloriesBankPageModule,
-    ComponentsModule
+    ComponentsModule,
+    WeeklySummaryPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    WeeklySummaryPage,
   ],
   providers: [
     StatusBar,
